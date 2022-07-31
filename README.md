@@ -28,6 +28,7 @@ $ python manage.py geosite
 ### 4. geosite/setting.py in the geosite project
 
 -  Change the database connection settings to match the setup(your installed database)
+
 ```
 DATABASES = {
     'default': {
@@ -47,7 +48,9 @@ DATABASES = {
     }
 }
 ```
+
 - Modify Installed App to include **django.contrib.gis**, **blog** , and **mapwidgets**.
+
 ```
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -69,12 +72,15 @@ How to Open the Webpage
 -----
 ### 1. Run(open) Postgres
 ### 2. Activate env
-```$ source env/bin/activate
+```
+$ source env/bin/activate
 ```
 ### 3. Within the project, run the server
 Before running the server, move to the folder **geosite**.
-```$ cd geosite
+```
+$ cd geosite
 ```
 Now, run the server.
-```$ python manage.py runserver
+```
+$ python manage.py runserver
 ```
