@@ -26,7 +26,7 @@ $ django-admin startproject geosite
 $ python manage.py geosite 
 ```
 - geosite/setting.py in the geosite project
-Change the database connection settings to match the setup(your installed database)
+    - Change the database connection settings to match the setup(your installed database)
 ```
 DATABASES = {
     'default': {
@@ -46,8 +46,8 @@ DATABASES = {
     }
 }
 ```
-Modify Installed App to include **django.contrib.gis**, **blog** , and **mapwidgets**.
-```python
+-    Modify Installed App to include **django.contrib.gis**, **blog** , and **mapwidgets**.
+```
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
