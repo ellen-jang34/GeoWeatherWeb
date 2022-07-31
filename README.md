@@ -16,7 +16,7 @@ Features
 Setup
 -----
 
-- Install **PostGIS**, **SpatiaLite** for Spatial Database
+- Install **PostGIS**, **Postgres**, **SpatiaLite** for Spatial Database
 - Create a project 
 ```
 $ django-admin startproject geosite
@@ -25,7 +25,42 @@ $ django-admin startproject geosite
 ```
 $ python manage.py geosite 
 ```
-- project/setting.py
+- geosite/setting.py in the geosite project
+Change the database connection settings to match the setup(your installed database)
+```
+DATABASES = {
+    'default': {
+
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+
+        'NAME': 'geodjango',
+
+        'USER': 'postgres',
+
+        'PASSWORD': 'tonycoding',
+
+        'HOST': 'localhost',
+
+        'PORT': '5432',
+
+    }
+}
+```
+Modify Installed App to include **django.contrib.gis**, **blog** , and **mapwidgets**.
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'django.contrib.gis',
+    'blog',
+    'mapwidgets',
+]
+```
+
 
 
 
