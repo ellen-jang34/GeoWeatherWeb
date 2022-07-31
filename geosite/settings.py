@@ -139,9 +139,9 @@ GOOGLE_MAP_API_KEY = 'AIzaSyC3k1DBndmELVSMf3OTb5P4bv0JjIfmNmM'
 MAP_WIDGETS = {
     "GooglePointFieldWidget": (
         ("zoom", 15),
-        ("mapCenterLocation", [51.5073509, -0.12775829999998223]),
+        ("mapCenterLocation", [39.952411, -75.5378]),
         ("markerFitZoom", 11),
-        ("GooglePlaceAutocompleteOptions", {'componentRestrictions': {'country': 'uk'}}),
+        ("GooglePlaceAutocompleteOptions", {'componentRestrictions': {'country': 'us'}}),
         ("streetViewControl", False)
     ),
     "GOOGLE_MAP_API_KEY": GOOGLE_MAP_API_KEY,
