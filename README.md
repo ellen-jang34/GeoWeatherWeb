@@ -16,17 +16,18 @@ Features
 Setup
 -----
 
-- Install **PostGIS**, **Postgres**, **SpatiaLite** for Spatial Database
-- Create a project 
+1. Install **PostGIS**, **Postgres**, **SpatiaLite** for Spatial Database
+2.  Create a project 
 ```
 $ django-admin startproject geosite
 ```
-- Create an application within the project 
+3. Create an application within the project 
 ```
 $ python manage.py geosite 
 ```
-- geosite/setting.py in the geosite project
-    - Change the database connection settings to match the setup(your installed database)
+4. geosite/setting.py in the geosite project
+
+-  Change the database connection settings to match the setup(your installed database)
 ```
 DATABASES = {
     'default': {
@@ -46,7 +47,7 @@ DATABASES = {
     }
 }
 ```
--    Modify Installed App to include **django.contrib.gis**, **blog** , and **mapwidgets**.
+- Modify Installed App to include **django.contrib.gis**, **blog** , and **mapwidgets**.
 ```
 INSTALLED_APPS = [
     'django.contrib.admin',
