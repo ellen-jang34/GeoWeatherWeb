@@ -3,7 +3,7 @@
 Weather Information Service Website
 -----
 
-### This website is Django-base and provides weather information of the location that is pin-pointed or searched on search bar of the website by a user. 
+This website is Django-base and provides weather information of the location that is pin-pointed or searched on search bar of the website by a user. 
 
 Features
 -----
@@ -16,16 +16,16 @@ Features
 Setup
 -----
 
-1. Install **PostGIS**, **Postgres**, **SpatiaLite** for Spatial Database
-2.  Create a project 
+### 1. Install **PostGIS**, **Postgres**, **SpatiaLite** for Spatial Database
+### 2.  Create a project 
 ```
 $ django-admin startproject geosite
 ```
-3. Create an application within the project 
+### 3. Create an application within the project 
 ```
 $ python manage.py geosite 
 ```
-4. geosite/setting.py in the geosite project
+### 4. geosite/setting.py in the geosite project
 
 -  Change the database connection settings to match the setup(your installed database)
 ```
@@ -67,11 +67,11 @@ INSTALLED_APPS = [
 
 How to Open the Webpage
 -----
-1. Run(open) Postgres
-2. Activate env
+### 1. Run(open) Postgres
+### 2. Activate env
 ```$ source env/bin/activate
 ```
-3. Within the project, run the server
+### 3. Within the project, run the server
 Before running the server, move to the folder **geosite**.
 ```$ cd geosite
 ```
